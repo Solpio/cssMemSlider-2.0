@@ -1,3 +1,101 @@
-.main{
-    background-color: black;
+.main {
+  background-color: black;
+}
+
+.slider {
+  max-width: 50rem;
+  background-color: #2b3034;
+  margin: 0 auto;
+}
+
+.slider_wrapper {
+  margin: 0 auto;
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .inputs{
+    display: none;
+} */
+
+.text {
+  color: #ffffff;
+}
+
+.image_container {
+  width: 95%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.image_wrapper {
+  display: flex;
+  width: inherit;
+}
+
+.img {
+  display: inline-block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: green;
+}
+
+.button:hover{
+    background-color: aqua;
+}
+
+#slide1:checked
+  ~ .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(1)
+  > .checkmark
+  > .button {
+  background-color: red;
+}
+#slide2:checked
+  ~ .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(2)
+  > .checkmark
+  > .button {
+  background-color: red;
+}
+#slide3:checked
+  ~ .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(3)
+  > .checkmark
+  > .button {
+  background-color: red;
+}
+#slide4:checked
+  ~ .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(4)
+  > .checkmark
+  > .button {
+  background-color: red;
+}
+
+.slider ~ #slide2 {
+  background-color: red;
 }
