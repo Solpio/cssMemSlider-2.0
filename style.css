@@ -81,8 +81,19 @@ html{
   > .checkmark
   > .button {
   background-color: #2b3034;
-  border: yellow 0.1rem solid;
+  border: green 0.1rem solid;
 }
+
+#slide1:checked
+  ~ .section
+  > .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(1)
+  > .checkmark:hover
+  > .button {
+  border: red 0.1rem solid;
+}
+
 #slide2:checked
   ~ .section
   > .buttons_container
@@ -91,7 +102,16 @@ html{
   > .checkmark
   > .button {
   background-color: #2b3034;
-  border: yellow 0.1rem solid;
+  border: green 0.1rem solid;
+}
+#slide2:checked
+  ~ .section
+  > .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(2)
+  > .checkmark:hover
+  > .button {
+  border: red 0.1rem solid;
 }
 #slide3:checked
   ~ .section
@@ -101,7 +121,16 @@ html{
   > .checkmark
   > .button {
   background-color: #2b3034;
-  border: yellow 0.1rem solid;
+  border: green 0.1rem solid;
+}
+#slide3:checked
+  ~ .section
+  > .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(3)
+  > .checkmark:hover
+  > .button {
+  border: red 0.1rem solid;
 }
 #slide4:checked
   ~ .section
@@ -111,7 +140,16 @@ html{
   > .checkmark
   > .button {
     background-color: #2b3034;
-    border: yellow 0.1rem solid;
+    border: green 0.1rem solid;
+}
+#slide4:checked
+  ~ .section
+  > .buttons_container
+  > .buttons_wrapper
+  > .radio_container:nth-child(4)
+  > .checkmark:hover
+  > .button {
+  border: red 0.1rem solid;
 }
 
 .slider ~ #slide2 {
