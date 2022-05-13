@@ -64,11 +64,13 @@ html{
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
-  background-color: green;
+  background-color: rgb(4, 138, 138);
+  transition: background-color 0.5s;
+  transition: border 0.5s;
 }
 
 .checkmark:hover > .button{
-    background-color: aqua;
+    background-color: rgb(79, 255, 255);
 }
 
 #slide1:checked
@@ -78,7 +80,8 @@ html{
   > .radio_container:nth-child(1)
   > .checkmark
   > .button {
-  background-color: red;
+  background-color: #2b3034;
+  border: yellow 0.1rem solid;
 }
 #slide2:checked
   ~ .section
@@ -87,7 +90,8 @@ html{
   > .radio_container:nth-child(2)
   > .checkmark
   > .button {
-  background-color: red;
+  background-color: #2b3034;
+  border: yellow 0.1rem solid;
 }
 #slide3:checked
   ~ .section
@@ -96,7 +100,8 @@ html{
   > .radio_container:nth-child(3)
   > .checkmark
   > .button {
-  background-color: red;
+  background-color: #2b3034;
+  border: yellow 0.1rem solid;
 }
 #slide4:checked
   ~ .section
@@ -105,7 +110,8 @@ html{
   > .radio_container:nth-child(4)
   > .checkmark
   > .button {
-  background-color: red;
+    background-color: #2b3034;
+    border: yellow 0.1rem solid;
 }
 
 .slider ~ #slide2 {
