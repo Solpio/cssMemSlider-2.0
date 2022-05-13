@@ -1,3 +1,7 @@
+html{
+  font-size: 62,5%;
+}
+
 .body {
   background-color: black;
 }
@@ -41,28 +45,30 @@
 .inner{
   width: 100%;
   overflow: hidden;
+  padding-top: 1.2rem;
 }
 
 .img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  border-radius: 1%;
 }
 
 .checkmark {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  margin-left: 20px;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: red; */
+  margin-left: 2rem;
   cursor: pointer;
 }
 
 .button {
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
   background-color: green;
 }
@@ -113,6 +119,14 @@
   height: inherit;
 }
 
+.section{
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column-reverse;
+  gap: 2rem; */
+}
 
 #slide1:checked~.image_container>.inner>.image_wrapper {
   margin-left: 0;
@@ -128,17 +142,17 @@
   margin-left: -300%;
 }
 
-#slide1:checked~.text_container>.text_wrapper {
+#slide1:checked~.section> .text_container>.text_wrapper {
   margin-left: 0;
 }
 
-#slide2:checked~.text_container>.text_wrapper {
+#slide2:checked~.section> .text_container>.text_wrapper {
   margin-left: -100%;
 }
-#slide3:checked~.text_container>.text_wrapper {
+#slide3:checked~.section> .text_container>.text_wrapper {
   margin-left: -200%;
 }
-#slide4:checked~.text_container>.text_wrapper {
+#slide4:checked~.section> .text_container>.text_wrapper {
   margin-left: -300%;
 }
 
@@ -152,7 +166,7 @@ input{
 }
 
 .text{
-  width: 100%;
+  font-size: 1.2rem;
 }
 
 .text_wrapper{
