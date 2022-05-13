@@ -1,4 +1,4 @@
-.main {
+.body {
   background-color: black;
 }
 
@@ -10,6 +10,7 @@
 
 .slider_wrapper {
   margin: 0 auto;
+  max-width: 95%;
 }
 
 .buttons_wrapper {
@@ -26,19 +27,26 @@
 }
 
 .image_container {
-  width: 95%;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
 }
 .image_wrapper {
-  display: flex;
-  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 400%;
+  transition: margin-left 0.5s;
+}
+
+.inner{
+  width: 100%;
+  overflow: hidden;
 }
 
 .img {
-  display: inline-block;
+  width: 100%;
   max-width: 100%;
-  /* height: auto; */
+  height: auto;
 }
 
 .checkmark {
@@ -55,11 +63,11 @@
 .button {
   width: 20px;
   height: 20px;
-  border-radius: 100px;
+  border-radius: 100%;
   background-color: green;
 }
 
-.button:hover{
+.checkmark:hover > .button{
     background-color: aqua;
 }
 
@@ -98,4 +106,58 @@
 
 .slider ~ #slide2 {
   background-color: red;
+}
+
+.data {
+  display: block;
+  height: inherit;
+}
+
+
+#slide1:checked~.image_container>.inner>.image_wrapper {
+  margin-left: 0;
+}
+
+#slide2:checked~.image_container>.inner>.image_wrapper {
+  margin-left: -100%;
+}
+#slide3:checked~.image_container>.inner>.image_wrapper {
+  margin-left: -200%;
+}
+#slide4:checked~.image_container>.inner>.image_wrapper {
+  margin-left: -300%;
+}
+
+#slide1:checked~.text_container>.text_wrapper {
+  margin-left: 0;
+}
+
+#slide2:checked~.text_container>.text_wrapper {
+  margin-left: -100%;
+}
+#slide3:checked~.text_container>.text_wrapper {
+  margin-left: -200%;
+}
+#slide4:checked~.text_container>.text_wrapper {
+  margin-left: -300%;
+}
+
+input{
+  display: none;
+}
+
+.text_container{
+  width: 100%;
+  overflow: hidden;
+}
+
+.text{
+  width: 100%;
+}
+
+.text_wrapper{
+  width: 400%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transition: margin-left 0.5s;
 }
