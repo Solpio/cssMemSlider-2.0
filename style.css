@@ -72,7 +72,8 @@ html{
 }
 
 #slide1:checked
-  ~ .buttons_container
+  ~ .section
+  > .buttons_container
   > .buttons_wrapper
   > .radio_container:nth-child(1)
   > .checkmark
@@ -80,7 +81,8 @@ html{
   background-color: red;
 }
 #slide2:checked
-  ~ .buttons_container
+  ~ .section
+  > .buttons_container
   > .buttons_wrapper
   > .radio_container:nth-child(2)
   > .checkmark
@@ -88,7 +90,8 @@ html{
   background-color: red;
 }
 #slide3:checked
-  ~ .buttons_container
+  ~ .section
+  > .buttons_container
   > .buttons_wrapper
   > .radio_container:nth-child(3)
   > .checkmark
@@ -96,7 +99,8 @@ html{
   background-color: red;
 }
 #slide4:checked
-  ~ .buttons_container
+  ~ .section
+  > .buttons_container
   > .buttons_wrapper
   > .radio_container:nth-child(4)
   > .checkmark
