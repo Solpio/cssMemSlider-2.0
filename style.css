@@ -179,7 +179,7 @@ input{
   transition: margin-left 0.5s;
 }
 
-@media (max-width:800px) {
+@media (max-width:40rem) {
   .slider {
     max-width: 25rem;
   }
