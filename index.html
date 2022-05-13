@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>memsilder</title>
-</head>
-<body class="body">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
     <main class="main">
-        <div class="slider">
-            <div class="image_container">
-                <img src="./assets/images/b49bf8ab156ee860455d674486344f62.jpg" alt="">
-                <img src="./assets/images/b49bf8ab156ee860455d674486344f62.jpg" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+      <div class="slider">
+        <div class="slider_wrapper">
+          <input type="radio" id="slide1" name="slider" checked />
+          <input type="radio" id="slide2" name="slider" />
+          <input type="radio" id="slide3" name="slider" />
+          <input type="radio" id="slide4" name="slider" />
+          <div class="image_container">
+            <div class="inner">
+              <div class="image_wrapper">
+                <img
+                class="img"
+                src="./assets/images/GraveClosedHagfish-max-1mb.gif"
+                alt=""
+                />
+                <img
+                class="img"
+                src="./assets/images/respect-ball.gif"
+                alt=""
+                />
+                <img
+                class="img"
+                src="./assets/images/sweaty-speedrunner.gif"
+                alt=""
+                />
+                <img
+                class="img"
+                src="./assets/images/mood-heart-beat.gif"
+                alt=""
+                />
+              </div>
             </div>
-            <div class="buttons_container">
-                <div class="buttons_wrapper">
-                    <div class="radio_container">
-                        <input type="radio" name="slider" checked>
-                        <span class="checkmark"></span>
-                    </div>
-                    <div class="radio_container">
-                        <input type="radio" name="slider">
-                        <span class="checkmark"></span>
-                    </div>
-                    <div class="radio_container">
-                        <input type="radio" name="slider">
-                        <span class="checkmark"></span>
-                    </div>
-                    <div class="radio_container">
-                        <input type="radio" name="slider">
-                        <span class="checkmark"></span>
-                    </div>
-                </div>
+          </div>
+          <div class="buttons_container">
+            <div class="buttons_wrapper">
+              <div class="radio_container">
+                <label class="checkmark" for="slide1">
+                  <div class="button"></div>
+                </label>
+              </div>
+              <div class="radio_container">
+                <label class="checkmark" for="slide2">
+                  <div class="button"></div>
+                </label>
+              </div>
+              <div class="radio_container">
+                <label class="checkmark" for="slide3">
+                  <div class="button"></div>
+                </label>
+              </div>
+              <div class="radio_container">
+                <label class="checkmark" for="slide4">
+                  <div class="button"></div>
+                </label>
+              </div>
             </div>
-            <div class="text_container">
-                <div class="text">Student 1 когда увидел твой код</div>
-                <div class="text">Забыл засабмитить ссылку на деплой</div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
+          </div>
+          <div class="text_container">
+            <div class="text_wrapper">
+              <div class="text">Написал код на queryselector'ах</div>
+              <div class="text">Student 1 проверяет твой таск</div>
+              <div class="text">Начал делать таск за 30 секунд до дедлайна</div>
+              <div class="text">Когда спросили за софт скиллы на собесе</div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
